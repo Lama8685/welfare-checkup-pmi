@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Welfare Check-Up PMI</title>
+
+  <style>
+    :root{
+      --blue:#073B5C;
+      --green:#35B44A;
+      --green-dark:#27933A;
+      --text:#173746;
+    }
+
+    *{box-sizing:border-box}
+
+    html,body{
+      margin:0;
+      padding:0;
+      min-height:100%;
+      font-family:Arial,sans-serif;
+      background:#f5f8f9;
+      color:var(--text);
+    }
+
+    .page{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px 18px;
+    }
+
+    .card{
+      width:100%;
+      max-width:650px;
+      background:#fff;
+      border-radius:28px;
+      padding:42px 32px 38px;
+      text-align:center;
+      box-shadow:0 15px 45px rgba(7,59,92,.14);
+      border:1px solid #e5ecef;
+    }
+
+    .brand{
+      color:var(--blue);
+      font-size:19px;
+      font-weight:800;
+      letter-spacing:3px;
+      margin-bottom:26px;
+    }
+
+    .line{
+      width:72px;
+      height:4px;
+      border-radius:4px;
+      margin:0 auto 28px;
+      background:linear-gradient(90deg,var(--green) 0 50%,#c91f2b 50% 100%);
+    }
+
+    h1{
+      color:var(--blue);
+      font-size:38px;
+      line-height:1.08;
+      margin:0 0 18px;
+    }
+
+    h1 span{
+      color:var(--green);
+    }
+
+    .intro{
+      font-size:19px;
+      line-height:1.5;
+      color:#60747b;
+      max-width:520px;
+      margin:0 auto 30px;
+    }
+
+    .time{
+      display:inline-block;
+      background:#eef9f0;
+      color:#277638;
+      border:1px solid #c7e8cc;
+      border-radius:30px;
+      padding:9px 17px;
+      font-weight:700;
+      margin-bottom:30px;
+    }
+
+    .checkup-button{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:76px;
+      border-radius:18px;
+      background:linear-gradient(135deg,#35b44a,#27933a);
+      color:#fff;
+      text-decoration:none;
+      font-size:25px;
+      font-weight:800;
+      box-shadow:0 10px 25px rgba(53,180,74,.28);
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+
+    .checkup-button:active{
+      transform:scale(.98);
+    }
+
+    .arrow{
+      margin-left:14px;
+      font-size:30px;
+    }
+
+    .privacy{
+      margin-top:22px;
+      font-size:12px;
+      color:#819198;
+      line-height:1.45;
+    }
+
+    @media(max-width:520px){
+      .page{padding:14px}
+      .card{padding:34px 20px 30px;border-radius:22px}
+      h1{font-size:31px}
+      .intro{font-size:17px}
+      .checkup-button{min-height:70px;font-size:21px}
+      .brand{font-size:16px}
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+    <section class="card">
+
+      <div class="brand">ANDREA LAMACCHIA</div>
+
+      <div class="line"></div>
+
+      <h1>
+        Scopri il potenziale<br>
+        <span>welfare della tua azienda</span>
+      </h1>
+
+      <p class="intro">
+        Rispondi a 12 semplici domande e scopri in circa 3 minuti
+        quali opportunità di welfare e protezione potrebbero essere
+        interessanti per la tua azienda.
+      </p>
+
+      <div class="time">⏱ CHECK-UP GRATUITO · CIRCA 3 MINUTI</div>
+
+      <a
+        class="checkup-button"
+        href="https://script.google.com/macros/s/AKfycbzwGFGfRU9PYtsaqc6qZh_e3rMA7XXo0iFkY7MT8wL-sBLMQes8rXMH8YQzz14vqDIN/exec"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Inizia il Welfare Check-Up">
+        INIZIA IL CHECK-UP <span class="arrow">→</span>
+      </a>
+
+      <div class="privacy">
+        Al termine riceverai una prima valutazione personalizzata.
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
