@@ -2,32 +2,60 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Welfare Check-Up PMI</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7faf8;color:#073B5C;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-.card{width:min(520px,100%);background:#fff;border-radius:24px;padding:38px 26px 30px;text-align:center;box-shadow:0 12px 40px rgba(7,59,92,.12)}
-.logo{font-weight:800;font-size:25px;letter-spacing:.4px;color:#073B5C}
-.logo span{color:#35B44A}
-.line{width:70px;height:4px;background:#C91F2B;border-radius:5px;margin:12px auto 25px}
-h1{font-size:29px;line-height:1.15;margin:0 0 15px;color:#073B5C}
-p{font-size:17px;line-height:1.5;color:#4d5d67;margin:0 auto 22px;max-width:440px}
-.info{font-size:13px;font-weight:700;letter-spacing:.5px;color:#073B5C;margin-bottom:22px}
-.button{display:block;text-decoration:none;background:#35B44A;color:#fff;font-size:20px;font-weight:800;padding:19px 20px;border-radius:14px;box-shadow:0 7px 18px rgba(53,180,74,.28)}
-.button:active{transform:scale(.98)}
-.note{font-size:12px;color:#7b858b;margin-top:18px}
+body{margin:0;background:#f5f8f6;color:#073B5C;font-family:Arial,Helvetica,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{width:min(520px,100%);background:#fff;border-radius:24px;padding:32px 24px 28px;text-align:center;box-shadow:0 10px 35px rgba(7,59,92,.14)}
+.logo{font-size:24px;font-weight:800;letter-spacing:.3px}
+.logo b{color:#35B44A}
+.red{height:4px;width:64px;background:#C91F2B;border-radius:5px;margin:12px auto 24px}
+h1{font-size:28px;line-height:1.15;margin:0 0 14px}
+p{font-size:17px;line-height:1.45;color:#52636d;margin:0 auto 20px}
+.insta{background:#f1f6f3;border-radius:16px;padding:18px 16px;margin:20px 0;text-align:left}
+.insta strong{display:block;font-size:18px;margin-bottom:8px;color:#073B5C}
+.step{display:flex;gap:10px;margin:9px 0;font-size:15px;line-height:1.35}
+.num{min-width:26px;height:26px;border-radius:50%;background:#35B44A;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.button{display:block;background:#35B44A;color:white;text-decoration:none;font-weight:800;font-size:19px;padding:17px;border-radius:13px;margin-top:18px}
+.note{font-size:12px;color:#7c878c;margin-top:15px}
+#normal{display:none}
 </style>
+<script>
+function isInstagram(){
+  return /Instagram/i.test(navigator.userAgent || '');
+}
+window.addEventListener('DOMContentLoaded', function(){
+  if(!isInstagram()){
+    document.getElementById('instagram').style.display='none';
+    document.getElementById('normal').style.display='block';
+  }
+});
+</script>
 </head>
 <body>
 <div class="card">
-  <div class="logo">ANDREA <span>LAMACCHIA</span></div>
-  <div class="line"></div>
-  <h1>Scopri il potenziale welfare della tua azienda</h1>
-  <p>Un check-up gratuito di circa 3 minuti per capire quanto è strutturato il welfare della tua azienda e dove puoi migliorarlo.</p>
-  <div class="info">⏱ CHECK-UP GRATUITO · CIRCA 3 MINUTI</div>
-  <a class="button" href="https://script.google.com/macros/s/AKfycbzwGFGfRU9PYtsaqc6qZh_e3rMA7XXo0iFkY7MT8wL-sBLMQes8rXMH8YQzz14vqDIN/exec" target="_blank" rel="noopener noreferrer">INIZIA IL CHECK-UP&nbsp; →</a>
-  <div class="note">Nessun impegno · I tuoi dati saranno trattati nel rispetto della normativa privacy.</div>
+  <div class="logo">ANDREA <b>LAMACCHIA</b></div>
+  <div class="red"></div>
+
+  <div id="instagram">
+    <h1>Sei quasi pronto!</h1>
+    <p>Per far funzionare correttamente il Check-Up, apri questa pagina nel browser del telefono.</p>
+    <div class="insta">
+      <strong>📱 Se sei su Instagram:</strong>
+      <div class="step"><span class="num">1</span><span>Tocca <b>⋯</b> in alto nella pagina.</span></div>
+      <div class="step"><span class="num">2</span><span>Scegli <b>“Apri nel browser”</b> oppure <b>“Apri in Safari/Chrome”</b>.</span></div>
+      <div class="step"><span class="num">3</span><span>Una volta aperto il browser, torna qui e avvia il Check-Up.</span></div>
+    </div>
+    <p style="font-size:14px;margin-bottom:0">Il Check-Up dura circa 3 minuti ed è gratuito.</p>
+  </div>
+
+  <div id="normal">
+    <h1>Scopri il potenziale welfare della tua azienda</h1>
+    <p>Un check-up gratuito di circa 3 minuti per capire quanto è strutturato il welfare della tua azienda e dove puoi migliorarlo.</p>
+    <a class="button" href="https://script.google.com/macros/s/AKfycbzwGFGfRU9PYtsaqc6qZh_e3rMA7XXo0iFkY7MT8wL-sBLMQes8rXMH8YQzz14vqDIN/exec" target="_blank" rel="noopener noreferrer">INIZIA IL CHECK-UP →</a>
+    <div class="note">Nessun impegno · I dati saranno trattati nel rispetto della normativa privacy.</div>
+  </div>
 </div>
 </body>
 </html>
